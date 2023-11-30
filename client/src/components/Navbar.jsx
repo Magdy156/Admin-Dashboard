@@ -7,7 +7,7 @@ import profileImage from "assets/bla.jpeg"
 import { AppBar, IconButton, InputBase, Toolbar, useTheme } from '@mui/material';
 
 
-const Navbar = () => {
+const Navbar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     const dispatch = useDispatch();
     const theme = useTheme();
 
@@ -21,7 +21,7 @@ const Navbar = () => {
     >
         <Toolbar sx={{ justifyContent: "space-between" }}>
             <FlexBetween>
-                <IconButton onClick={() => console.log("close/open the sidebar")}>
+                <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
                     <Toggle></Toggle>
                 </IconButton>
                 <FlexBetween
