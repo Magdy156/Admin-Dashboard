@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import { useSelector } from "react-redux";
 import { themeSettings } from "theme";
 import Dashboard from "scenes/dashboard";
+import Products from "scenes/products";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "scenes/layout";
 
@@ -19,6 +20,7 @@ function App(){
                     <Route element={<Layout />}>
                         <Route path="/" element={<Navigate to="/dashboard"  replace/>}></Route>
                         <Route path="/dashboard" element={<Dashboard />}></Route>
+                        <Route path="/products" element={<Products />}></Route>
                     </Route>
                 </Routes>
             </ThemeProvider>
