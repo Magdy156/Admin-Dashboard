@@ -7,8 +7,9 @@ import mongoose from "mongoose";
 import User from "./models/User.js";
 import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js"
+import Transaction from "./models/Transactions.js";
 
-import { dataUser, dataProduct, dataProductStat} from "./data/index.js"
+import { dataUser, dataProduct, dataProductStat, dataTransaction} from "./data/index.js"
 
 // ROUTES
 
@@ -44,4 +45,5 @@ mongoose.connect(process.env.MONGO_URL, {
     // User.insertMany(dataUser);
     // Product.insertMany(dataProduct);
     // ProductStat.insertMany(dataProductStat);
+    // Transaction.insertMany(dataTransaction);
 }).catch((err) => console.log(err))

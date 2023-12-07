@@ -6,6 +6,7 @@ import { themeSettings } from "theme";
 import Dashboard from "scenes/dashboard";
 import Products from "scenes/products";
 import Customers from "scenes/customers"
+import Transactions from "scenes/transactions"
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "scenes/layout";
 
@@ -23,6 +24,7 @@ function App(){
                         <Route path="/dashboard" element={<Dashboard />}></Route>
                         <Route path="/products" element={<Products />}></Route>
                         <Route path="/customers" element={<Customers />}></Route>
+                        <Route path="/transactions" element={<Transactions />}></Route>
                     </Route>
                 </Routes>
             </ThemeProvider>
