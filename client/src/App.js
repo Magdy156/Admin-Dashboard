@@ -7,6 +7,7 @@ import Dashboard from "scenes/dashboard";
 import Products from "scenes/products";
 import Customers from "scenes/customers"
 import Transactions from "scenes/transactions"
+import Geography from "scenes/geography";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "scenes/layout";
 
@@ -21,10 +22,17 @@ function App(){
                 <Routes>
                     <Route element={<Layout />}>
                         <Route path="/" element={<Navigate to="/dashboard"  replace/>}></Route>
-                        <Route path="/dashboard" element={<Dashboard />}></Route>
+                        <Route path="/dashboard" element={<Products />}></Route>
                         <Route path="/products" element={<Products />}></Route>
                         <Route path="/customers" element={<Customers />}></Route>
                         <Route path="/transactions" element={<Transactions />}></Route>
+                        <Route path="/geography" element={<Geography />}></Route>
+                        <Route path="/overview" element={<Geography />}></Route>
+                        <Route path="/daily" element={<Geography />}></Route>
+                        <Route path="/monthly" element={<Geography />}></Route>
+                        <Route path="/breakdown" element={<Geography />}></Route>
+                        <Route path="/admin" element={<Geography />}></Route>
+                        <Route path="/performance" element={<Geography />}></Route>
                     </Route>
                 </Routes>
             </ThemeProvider>
