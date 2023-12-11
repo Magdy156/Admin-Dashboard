@@ -28,7 +28,4 @@
 
 ##### 7- then "npm start" server and client
 
-#### [Take a look](https://admin-frontend-hlwe.onrender.com/products) - Maybe the data will take time to be rendered because it's a free host
-
-#### If the link doesn't work here is a pic of the web app
-<img src="https://drive.google.com/file/d/1FSssH6hJu4sablBlJ58haJWddyZfGE0X/view?usp=sharing" width="300px" height="300px"/>
+#### [Take a look](https://admin-frontend-hlwe.onrender.com/products) - Maybe the data will take time to be rendered because it's a free host https://admin-frontend-hlwe.onrender.com
